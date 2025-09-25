@@ -1,7 +1,7 @@
 {
-  "name": "nitro-tech-hub",
+  "name": "nitro-hub",
   "version": "1.0.0",
-  "description": "Hub das soluções da Nitro Tech Hub",
+  "description": "Hub das soluções da Nitro Hub",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

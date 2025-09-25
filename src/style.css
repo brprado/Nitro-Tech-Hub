@@ -52,6 +52,7 @@ body {
   opacity: 0.3;
 }
 
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -404,6 +405,49 @@ body {
 
 .status-development::before {
   background: rgba(255, 193, 7, 1);
+}
+
+.hammer-animation {
+  display: inline-block;
+  margin-left: 8px;
+  animation: hammerHit 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes hammerHit {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  10% {
+    transform: rotate(-15deg) translateY(-2px);
+  }
+  20% {
+    transform: rotate(30deg) translateY(-4px);
+  }
+  30% {
+    transform: rotate(-10deg) translateY(-2px);
+  }
+  40% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  60% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  70% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  80% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  90% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
 }
 
 @keyframes pulse {

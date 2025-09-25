@@ -1,6 +1,6 @@
-# Nitro Tech Hub
+# Nitro Hub
 
-Hub das soluções tecnológicas da Nitro Tech Hub, apresentando os softwares desenvolvidos pela empresa.
+Hub das soluções tecnológicas da Nitro Hub, apresentando os softwares desenvolvidos pela empresa.
 
 ## 🚀 Softwares Disponíveis
 
@@ -48,12 +48,12 @@ npm run build
 
 ### Build da imagem
 ```bash
-docker build -t nitro-tech-hub .
+docker build -t nitro-hub .
 ```
 
 ### Executar container
 ```bash
-docker run -p 80:80 nitro-tech-hub
+docker run -p 80:80 nitro-hub
 ```
 
 ## 🚂 Deploy no Railway
@@ -80,12 +80,12 @@ A aplicação é totalmente responsiva e funciona perfeitamente em:
 - Gradientes e sombras para profundidade
 - Animações suaves de hover
 - Tipografia Inter para melhor legibilidade
-- Cores da marca Nitro Tech Hub
+- Cores da marca Nitro Hub
 
 ## 📄 Estrutura do Projeto
 
 ```
-nitro-tech-hub/
+nitro-hub/
 ├── src/
 │   ├── App.vue          # Componente principal
 │   ├── main.js          # Ponto de entrada
@@ -111,10 +111,10 @@ npm run build
 npm run preview
 
 # Docker build
-docker build -t nitro-tech-hub .
+docker build -t nitro-hub .
 
 # Docker run
-docker run -p 80:80 nitro-tech-hub
+docker run -p 80:80 nitro-hub
 ```
 
 ## 📞 Suporte

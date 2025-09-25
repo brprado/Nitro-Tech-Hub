@@ -12,11 +12,6 @@
               <span class="letter">R</span>
               <span class="letter">O</span>
               <span class="space"></span>
-              <span class="letter">T</span>
-              <span class="letter">E</span>
-              <span class="letter">C</span>
-              <span class="letter">H</span>
-              <span class="space"></span>
               <span class="letter">H</span>
               <span class="letter">U</span>
               <span class="letter">B</span>
@@ -75,11 +70,12 @@
           <!-- NitroADS -->
           <div class="solution-card">
             <div class="solution-header">
-              <div class="solution-logo" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); color: white; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">
-                📈
-              </div>
+              <img src="/bi-image.png" alt="NitroADS BI Logo" class="solution-logo">
               <div class="solution-title">
-                <span class="status-badge status-development">Em Desenvolvimento</span>
+                <span class="status-badge status-development">
+                  Em Desenvolvimento
+                  <span class="hammer-animation">🔨</span>
+                </span>
                 <h3>NitroADS</h3>
               </div>
             </div>
