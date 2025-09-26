@@ -11,6 +11,18 @@
           :style="star.style"
         ></div>
       </div>
+      
+      <!-- Clouds Container -->
+      <div class="clouds" v-if="!isDarkMode">
+        <div 
+          v-for="(cloud, index) in clouds" 
+          :key="index"
+          class="cloud"
+          :style="cloud.style"
+        >
+          <div class="cloud-shape"></div>
+        </div>
+      </div>
       <div class="container">
         <div class="hero-content">
           <div class="title-container">
@@ -145,7 +157,9 @@ export default {
       typeSpeed: 80,
       isDarkMode: false,
       shootingStars: [],
-      shootingStarInterval: null
+      shootingStarInterval: null,
+      clouds: [],
+      cloudInterval: null
     }
   },
   mounted() {
@@ -182,8 +196,10 @@ export default {
       
       if (this.isDarkMode) {
         this.startShootingStars();
+        this.stopClouds();
       } else {
         this.stopShootingStars();
+        this.startClouds();
       }
     },
     applyTheme() {
@@ -210,6 +226,8 @@ export default {
       
       if (this.isDarkMode) {
         this.startShootingStars();
+      } else {
+        this.startClouds();
       }
     },
     createShootingStar() {
@@ -256,6 +274,53 @@ export default {
         this.shootingStarInterval = null;
       }
       this.shootingStars = [];
+    },
+    createCloud() {
+      const cloudCount = Math.floor(Math.random() * 2) + 1; // 1 ou 2 nuvens
+      const newClouds = [];
+      
+      for (let i = 0; i < cloudCount; i++) {
+        const delay = i * 0.5; // Delay menor entre cada nuvem
+        const offsetX = Math.random() * 200 - 100; // Offset X aleatório (-100px a 100px)
+        const offsetY = Math.random() * 100 - 50; // Offset Y aleatório (-50px a 50px)
+        const duration = Math.random() * 2 + 3; // Duração entre 3s e 5s (mais rápido)
+        const size = Math.random() * 0.5 + 0.8; // Tamanho entre 0.8 e 1.3
+        
+        newClouds.push({
+          style: {
+            right: `calc(-100px + ${offsetX}px)`,
+            top: `calc(-100px + ${offsetY}px)`,
+            animationDelay: delay + 's',
+            animationDuration: duration + 's',
+            transform: `scale(${size})`
+          }
+        });
+      }
+      
+      this.clouds = [...this.clouds, ...newClouds];
+      
+      // Remove as nuvens após a animação
+      setTimeout(() => {
+        this.clouds = this.clouds.slice(cloudCount);
+      }, 6000);
+    },
+    startClouds() {
+      if (this.cloudInterval) {
+        clearInterval(this.cloudInterval);
+      }
+      
+      this.cloudInterval = setInterval(() => {
+        if (!this.isDarkMode) {
+          this.createCloud();
+        }
+      }, 2000);
+    },
+    stopClouds() {
+      if (this.cloudInterval) {
+        clearInterval(this.cloudInterval);
+        this.cloudInterval = null;
+      }
+      this.clouds = [];
     }
   }
 }
