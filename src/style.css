@@ -182,7 +182,7 @@ body {
 }
 
 .rocket {
-  font-size: 3rem;
+  font-size: 4rem;
   animation: rocketFly 3s ease-in-out infinite;
   z-index: 2;
   position: relative;
@@ -866,7 +866,7 @@ body {
   }
   
   .rocket {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   
   .hero p {
@@ -924,7 +924,7 @@ body {
   }
   
   .rocket {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   
   .hero p {
