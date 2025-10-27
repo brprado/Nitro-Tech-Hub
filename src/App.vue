@@ -116,10 +116,7 @@
             <div class="solution-header">
               <img src="/bi-image.png" alt="NitroADS BI Logo" class="solution-logo">
               <div class="solution-title">
-                <span class="status-badge status-development">
-                  Em Desenvolvimento
-                  <span class="hammer-animation">🔨</span>
-                </span>
+                <span class="status-badge status-live">EM PRODUÇÃO</span>
                 <h3>NitroADS</h3>
               </div>
             </div>
@@ -128,9 +125,9 @@
               Monitore performance, otimize investimentos e tome decisões baseadas 
               em dados reais para maximizar o ROI das suas campanhas.
             </p>
-            <button class="btn btn-secondary" disabled>
-              Em Breve
-            </button>
+            <a href="https://app.powerbi.com/groups/me/apps/d21319f2-d5ca-4af6-90cd-55113058f2b6/reports/6d63b8aa-bd0e-48ac-afa3-e496540f25b2/fe947560a908e83dad98?ctid=6ce8ae7f-5944-4992-a0f3-1fe4f6b73f1b&experience=power-bi" target="_blank" class="btn btn-primary">
+              Acessar NitroADS
+            </a>
           </div>
         </div>
       </div>

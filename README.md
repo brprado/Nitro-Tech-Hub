@@ -15,8 +15,9 @@ Hub das soluções tecnológicas da Nitro Hub, apresentando os softwares desenvo
 - **URL**: https://www.nitrocampaign.com
 
 ### NitroADS
-- **Status**: Em Desenvolvimento
+- **Status**: EM PRODUÇÃO
 - **Descrição**: BI operacional para gestão de anúncios em plataformas digitais
+- **URL**: https://app.powerbi.com/groups/me/apps/d21319f2-d5ca-4af6-90cd-55113058f2b6/reports/6d63b8aa-bd0e-48ac-afa3-e496540f25b2/fe947560a908e83dad98?ctid=6ce8ae7f-5944-4992-a0f3-1fe4f6b73f1b&experience=power-bi
 
 ## 🛠️ Tecnologias Utilizadas
 
