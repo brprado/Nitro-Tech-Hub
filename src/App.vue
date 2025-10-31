@@ -125,6 +125,35 @@
               Monitore performance, otimize investimentos e tome decisões baseadas 
               em dados reais para maximizar o ROI das suas campanhas.
             </p>
+            
+            <!-- Tutorial Video Section -->
+            <div class="tutorial-section">
+              <h4>📚 Tutoriais de Acesso</h4>
+              
+              <!-- Desktop Tutorial Video -->
+              <div class="video-container">
+                <h5>🖥️ Como acessar pelo Desktop/Web:</h5>
+                <iframe 
+                  width="100%" 
+                  height="200" 
+                  src="https://www.youtube.com/embed/DZ5MM3GQdV0?si=zSdjOcR2Nj7WHRba" 
+                  title="Tutorial - Como acessar Power BI Web Desktop" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              
+              <!-- Mobile Tutorial Link -->
+              <div class="mobile-tutorial">
+                <h5>📱 Como acessar pelo Celular:</h5>
+                <a href="https://youtube.com/shorts/3RnKtMliY5w?si=FOpvxWaKJe0SH2nP" target="_blank" class="btn btn-secondary">
+                  📺 Ver Tutorial Mobile
+                </a>
+              </div>
+            </div>
+            
             <a href="https://app.powerbi.com/groups/me/apps/d21319f2-d5ca-4af6-90cd-55113058f2b6/reports/6d63b8aa-bd0e-48ac-afa3-e496540f25b2/fe947560a908e83dad98?ctid=6ce8ae7f-5944-4992-a0f3-1fe4f6b73f1b&experience=power-bi" target="_blank" class="btn btn-primary">
               Acessar NitroADS
             </a>

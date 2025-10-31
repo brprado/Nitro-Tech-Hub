@@ -909,6 +909,78 @@ body {
   }
 }
 
+/* Tutorial Section Styles */
+.tutorial-section {
+  margin: 24px 0;
+  padding: 24px;
+  background: rgba(3, 154, 163, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(3, 154, 163, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark-theme .tutorial-section {
+  background: rgba(5, 180, 190, 0.08);
+  border-color: rgba(5, 180, 190, 0.15);
+}
+
+.tutorial-section h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tutorial-section h5 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.video-container {
+  margin-bottom: 24px;
+}
+
+.video-container iframe {
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(3, 154, 163, 0.15);
+  transition: all 0.3s ease;
+  max-width: 100%;
+}
+
+.video-container iframe:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(3, 154, 163, 0.25);
+}
+
+.mobile-tutorial {
+  text-align: center;
+}
+
+.mobile-tutorial .btn-secondary {
+  background: linear-gradient(135deg, rgba(3, 154, 163, 0.1), rgba(5, 180, 190, 0.05));
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile-tutorial .btn-secondary:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(3, 154, 163, 0.3);
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 0 16px;
@@ -941,5 +1013,25 @@ body {
   
   .solution-card p {
     font-size: 1rem;
+  }
+  
+  .tutorial-section {
+    padding: 20px 16px;
+    margin: 20px 0;
+  }
+  
+  .tutorial-section h4 {
+    font-size: 1.2rem;
+  }
+  
+  .tutorial-section h5 {
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+  
+  .video-container iframe {
+    height: 180px;
   }
 }
