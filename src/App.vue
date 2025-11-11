@@ -136,8 +136,8 @@
                 <iframe 
                   width="100%" 
                   height="200" 
-                  src="https://www.youtube.com/embed/DZ5MM3GQdV0?si=zSdjOcR2Nj7WHRba" 
-                  title="Tutorial - Como acessar Power BI Web Desktop" 
+                  src="https://kommodo.ai/recordings/bl7ti91xOM8HiwPhQcjj" 
+                  title="Tutorial Completo do Dashboard de Tráfego Pago no Power BI" 
                   frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   referrerpolicy="strict-origin-when-cross-origin" 
